@@ -1,5 +1,5 @@
 import React from "react";
-import './FunctionalCard.css'
+import './ClassCard.css'
 class ClassCard extends React.Component {
     render() {
       return (
