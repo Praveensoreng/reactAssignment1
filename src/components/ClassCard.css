@@ -1,0 +1,12 @@
+.classCard{
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color:#FFBD33;
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top:390px;
+    left:55%;
+}
