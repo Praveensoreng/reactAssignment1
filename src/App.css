@@ -22,8 +22,8 @@
      width: 50%;
  }
  .card_container{
+     
      width: 80%;
      margin: 150px auto;
-     display: flex;
-     justify-content: space-between;
+    
  }
