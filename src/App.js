@@ -6,10 +6,12 @@ import './App.css';
 
 function App() {
   const [Show, setShow] = useState(false);
-  
-  
+  const [display, setdisplay] = useState(false);
   function showCard(){
     setShow(!Show);
+  }
+  function displayCard(){
+    setdisplay(!display);
   }
  
   return (
@@ -17,13 +19,13 @@ function App() {
       <h1 className="title">Styling Using Functional and Class Component</h1>
 
       <section className='button_container'>
-      <Button buttonText="To See Styling in Functional Component" showData={showCard} bgcolor="green" textColor="white"/>
-      <Button buttonText="To See Styling in Class Component" showData={showCard} bgcolor="red" textColor="white"/>
+      <Button buttonText="To See Styling in Functional Component" showData={showCard} bgcolor="#A933FF " textColor="white"/>
+      <Button buttonText="To See Styling in Class Component" showData={displayCard} bgcolor="#FF336F " textColor="white"/>
       </section>
 
       <section className='card_container'>
         {Show ? <FunctionalCard/>: null }
-        {Show ? <ClassCard/>: null }
+        {display ? <ClassCard/>: null }
 
         
       </section>
@@ -33,3 +35,5 @@ function App() {
 }
 
 export default App;
+
+
